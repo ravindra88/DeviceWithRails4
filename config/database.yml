@@ -11,7 +11,7 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: Devise4_development
+  database: DeviseWithRails4_development
   pool: 5
   username: root
   password: root
@@ -23,7 +23,7 @@ development:
 test:
   adapter: mysql
   encoding: utf8
-  database: Devise4_test
+  database: DeviseWithRails4_test
   pool: 5
   username: root
   password: root
@@ -32,7 +32,7 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: Devise4_production
+  database: DeviseWithRails4_production
   pool: 5
   username: root
   password: root

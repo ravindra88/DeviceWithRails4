@@ -18,7 +18,15 @@
 
   <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
   <%= f.password_field :current_password %></div>
+    <%= f.fields_for :profile do |profile_form| %>
+        <div><%= profile_form.label :first_name %></br>
+          <%= profile_form.text_field :first_name %></div>
 
+        <div><%= profile_form.label :last_name %></br>
+          <%= profile_form.text_field :last_name %></div>
+        <div><%= profile_form.label :gender %></br>
+          <%= profile_form.text_field :gender %></div>
+    <% end %>
   <div><%= f.submit "Update" %></div>
 <% end %>
 
