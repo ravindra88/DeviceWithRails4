@@ -4,9 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use mysql as the database for Active Record
-gem 'mysql2'
+gem 'mysql'
 gem 'bootstrap-sass'
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git', :ref => '49aebde'
+gem 'certified'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'oauth2'
