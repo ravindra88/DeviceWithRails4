@@ -4,7 +4,13 @@
 <% unless user_signed_in? -%>
     <p><%= link_to 'Sign up as User', new_user_registration_path %></p>
     <p><%= link_to 'Sign in as User', new_user_session_path %></p>
-    <%= link_to 'Login with Facebook', '/auth/facebook/' %>
+    <p>+++++++++++++++++++++++++++++++++++++++++++++++++</p>
+    <p>+++++++ Social Media Login With Device Rails 4 ++++++++++</p>
+    <p><%= link_to 'Login with Facebook', '/auth/facebook/' %></p>
+    <p><%= link_to 'Login with Github', '/auth/github' %></p>
+    <p><%= link_to 'Login with Twitter', '/auth/twitter' %></p>
+    <p><%= link_to 'Login with LinkedIn', '/auth/linkedin' %></p>
+    <p><%= link_to 'Login with Google+', '/auth/google_oauth2' %></p>
 <% end -%>
 
 <% if user_signed_in? -%>
