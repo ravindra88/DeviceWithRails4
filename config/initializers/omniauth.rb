@@ -6,20 +6,5 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider :twitter, 'wkVORw88UFqcUOkdqRasCA', 'fh5fN7BYJYQJSBPMwsI3a4v0HqHW6EBQZQZpmc8Xc'
   provider :linkedin, 'I1w4MFgQu7IWcexY', '19279ee3-8fb4-405b-bb39-4f19b344a376'#, :scope => 'r_fullprofile r_emailaddress r_network'
   provider :google_oauth2, '895994529643-m30br5sejl7miam3qeu3jhuvbb4qi9md.apps.googleusercontent.com', 'IMowssQ-jLbyGgmbboFEXRn5'
-  #provider :google_oauth2, ENV["GOOGLE_KEY"], ENV["GOOGLE_SECRET"],
-  #         {
-  #             :name => "google",
-  #             :scope => "userinfo.email, userinfo.profile, plus.me, http://gdata.youtube.com",
-  #             :prompt => "select_account",
-  #             :image_aspect_ratio => "square",
-  #             :image_size => 50
-  #         }
-  #provider :google_oauth2, CLIENT_ID, CLIENT_SECRET, {
-  #    access_type: 'offline',
-  #    scope: 'userinfo.email,userinfo.profile,plus.me,https://www.googleapis.com/auth/plus.login',
-  #    request_visible_actions: 'http://schemas.google.com/AddActivity',
-  #    redirect_uri: 'http://localhost/auth/google_oauth2/callback'
-  #}
-  #provider :twitter, '', ''
   # If you want to also configure for additional login services, they would be configured here.
 end

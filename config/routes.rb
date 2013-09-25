@@ -3,6 +3,8 @@ Devise4::Application.routes.draw do
 
   get '/token' => 'home#token', as: :token
   get "home/index"
+  match "getmail" => 'authentications#get_email', via: 'get'
+  match "setmail" => 'authentications#set_email', via: 'post'
   #root :to => "home#index"
   root 'home#index'
 
