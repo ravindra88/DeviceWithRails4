@@ -37,27 +37,7 @@ class AuthenticationsController < ApplicationController
         flash[:notice] = "Account created and signed in successfully."
         sign_in_and_redirect(:user, @user)
       end
-      # Authentication not found, thus a new user.
-      #user = User.new
-      #user.apply_omniauth(auth)
-      #if user.save(:validate => false)
-      #  flash[:notice] = "Account created and signed in successfully."
-      #  sign_in_and_redirect(:user, user)
-      #else
-      #  flash[:error] = "Error while creating a user account. Please try again."
-      #  redirect_to root_url
-      #end
     end
   end
-
-  def set_email
-     puts params[:email]
-  end
-
-#  private
-  def get_email
-
-  end
-
 
 end
